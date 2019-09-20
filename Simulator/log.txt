@@ -1,0 +1,674 @@
+insts:
+   0: addu	$s0,$zero,$zero
+   1: addu	$s1,$zero,$zero
+   2: addiu	$v0,$zero,5
+   3: syscall
+   4: sw	$v0,0($gp)
+   5: lw	$s2,0($gp)
+   6: slt	$t0,$s1,$s2
+   7: beq	$t0,$zero,6
+   8: addiu	$v0,$zero,5
+   9: syscall
+  10: addu	$s0,$s0,$v0
+  11: addiu	$s1,$s1,1
+  12: j	5
+  13: addu	$a0,$s0,$zero
+  14: addiu	$v0,$zero,1
+  15: syscall
+  16: addiu	$v0,$zero,10
+  17: syscall
+
+data:
+  18: 0
+
+PC: 0
+inst: addu	$s0,$zero,$zero
+
+regs:
+   $zero =     0     $at =     0     $v0 =     0     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     0     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     0     $s1 =     0     $s2 =     0     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     0
+
+
+PC: 1
+inst: addu	$s1,$zero,$zero
+
+regs:
+   $zero =     0     $at =     0     $v0 =     0     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     0     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     0     $s1 =     0     $s2 =     0     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     0
+
+
+PC: 2
+inst: addiu	$v0,$zero,5
+
+regs:
+   $zero =     0     $at =     0     $v0 =     5     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     0     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     0     $s1 =     0     $s2 =     0     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     0
+
+
+PC: 3
+inst: syscall
+
+regs:
+   $zero =     0     $at =     0     $v0 =     3     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     0     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     0     $s1 =     0     $s2 =     0     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     0
+
+
+PC: 4
+inst: sw	$v0,0($gp)
+
+regs:
+   $zero =     0     $at =     0     $v0 =     3     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     0     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     0     $s1 =     0     $s2 =     0     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 5
+inst: lw	$s2,0($gp)
+
+regs:
+   $zero =     0     $at =     0     $v0 =     3     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     0     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     0     $s1 =     0     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 6
+inst: slt	$t0,$s1,$s2
+
+regs:
+   $zero =     0     $at =     0     $v0 =     3     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     1     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     0     $s1 =     0     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 7
+inst: beq	$t0,$zero,6
+
+regs:
+   $zero =     0     $at =     0     $v0 =     3     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     1     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     0     $s1 =     0     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 8
+inst: addiu	$v0,$zero,5
+
+regs:
+   $zero =     0     $at =     0     $v0 =     5     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     1     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     0     $s1 =     0     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 9
+inst: syscall
+
+regs:
+   $zero =     0     $at =     0     $v0 =     1     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     1     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     0     $s1 =     0     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 10
+inst: addu	$s0,$s0,$v0
+
+regs:
+   $zero =     0     $at =     0     $v0 =     1     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     1     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     1     $s1 =     0     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 11
+inst: addiu	$s1,$s1,1
+
+regs:
+   $zero =     0     $at =     0     $v0 =     1     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     1     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     1     $s1 =     1     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 12
+inst: j	5
+
+regs:
+   $zero =     0     $at =     0     $v0 =     1     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     1     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     1     $s1 =     1     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 5
+inst: lw	$s2,0($gp)
+
+regs:
+   $zero =     0     $at =     0     $v0 =     1     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     1     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     1     $s1 =     1     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 6
+inst: slt	$t0,$s1,$s2
+
+regs:
+   $zero =     0     $at =     0     $v0 =     1     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     1     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     1     $s1 =     1     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 7
+inst: beq	$t0,$zero,6
+
+regs:
+   $zero =     0     $at =     0     $v0 =     1     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     1     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     1     $s1 =     1     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 8
+inst: addiu	$v0,$zero,5
+
+regs:
+   $zero =     0     $at =     0     $v0 =     5     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     1     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     1     $s1 =     1     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 9
+inst: syscall
+
+regs:
+   $zero =     0     $at =     0     $v0 =     2     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     1     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     1     $s1 =     1     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 10
+inst: addu	$s0,$s0,$v0
+
+regs:
+   $zero =     0     $at =     0     $v0 =     2     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     1     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     3     $s1 =     1     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 11
+inst: addiu	$s1,$s1,1
+
+regs:
+   $zero =     0     $at =     0     $v0 =     2     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     1     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     3     $s1 =     2     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 12
+inst: j	5
+
+regs:
+   $zero =     0     $at =     0     $v0 =     2     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     1     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     3     $s1 =     2     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 5
+inst: lw	$s2,0($gp)
+
+regs:
+   $zero =     0     $at =     0     $v0 =     2     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     1     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     3     $s1 =     2     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 6
+inst: slt	$t0,$s1,$s2
+
+regs:
+   $zero =     0     $at =     0     $v0 =     2     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     1     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     3     $s1 =     2     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 7
+inst: beq	$t0,$zero,6
+
+regs:
+   $zero =     0     $at =     0     $v0 =     2     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     1     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     3     $s1 =     2     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 8
+inst: addiu	$v0,$zero,5
+
+regs:
+   $zero =     0     $at =     0     $v0 =     5     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     1     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     3     $s1 =     2     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 9
+inst: syscall
+
+regs:
+   $zero =     0     $at =     0     $v0 =     3     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     1     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     3     $s1 =     2     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 10
+inst: addu	$s0,$s0,$v0
+
+regs:
+   $zero =     0     $at =     0     $v0 =     3     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     1     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     6     $s1 =     2     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 11
+inst: addiu	$s1,$s1,1
+
+regs:
+   $zero =     0     $at =     0     $v0 =     3     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     1     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     6     $s1 =     3     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 12
+inst: j	5
+
+regs:
+   $zero =     0     $at =     0     $v0 =     3     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     1     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     6     $s1 =     3     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 5
+inst: lw	$s2,0($gp)
+
+regs:
+   $zero =     0     $at =     0     $v0 =     3     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     1     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     6     $s1 =     3     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 6
+inst: slt	$t0,$s1,$s2
+
+regs:
+   $zero =     0     $at =     0     $v0 =     3     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     0     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     6     $s1 =     3     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 7
+inst: beq	$t0,$zero,6
+
+regs:
+   $zero =     0     $at =     0     $v0 =     3     $v1 =     0
+     $a0 =     0     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     0     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     6     $s1 =     3     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 13
+inst: addu	$a0,$s0,$zero
+
+regs:
+   $zero =     0     $at =     0     $v0 =     3     $v1 =     0
+     $a0 =     6     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     0     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     6     $s1 =     3     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 14
+inst: addiu	$v0,$zero,1
+
+regs:
+   $zero =     0     $at =     0     $v0 =     1     $v1 =     0
+     $a0 =     6     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     0     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     6     $s1 =     3     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 15
+inst: syscall
+
+regs:
+   $zero =     0     $at =     0     $v0 =     1     $v1 =     0
+     $a0 =     6     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     0     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     6     $s1 =     3     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 16
+inst: addiu	$v0,$zero,10
+
+regs:
+   $zero =     0     $at =     0     $v0 =    10     $v1 =     0
+     $a0 =     6     $a1 =     0     $a2 =     0     $a3 =     0
+     $t0 =     0     $t1 =     0     $t2 =     0     $t3 =     0
+     $t4 =     0     $t5 =     0     $t6 =     0     $t7 =     0
+     $s0 =     6     $s1 =     3     $s2 =     3     $s3 =     0
+     $s4 =     0     $s5 =     0     $s6 =     0     $s7 =     0
+     $t8 =     0     $t9 =     0     $k0 =     0     $k1 =     0
+     $gp =    18     $sp =     0     $fp =     0     $ra =     0
+     $lo =     0     $hi =     0
+
+data memory:
+   data[  0] =     3
+
+
+PC: 17
+inst: syscall
+exiting simulator
